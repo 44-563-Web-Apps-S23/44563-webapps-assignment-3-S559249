@@ -18,6 +18,10 @@
         <h3>Warriors</h3>
         <ol>
            <li>Virat Kohli</li>
+           <ol>
+            <li>Dravid</li>
+            <li>Raina</li>
+           </ol>
            <li>Rohit Sharma</li>
             <li>Rishabh Pant</li>
         </ol>
@@ -26,5 +30,53 @@
             <li>Mumbai Indians</li>
             <li>Sunrisers</li>
         </ul>
+        <hr>
+        <h2>favourite countries</h2>
+        <table>
+                <tr>
+                    <th>Country</th>
+                    <th>Reason to visit</th>
+                    <th>No of days</th>
+                </tr>
+            
+            <tr>
+                <td>Paris</td>
+                <td>eiffel tower which is beautiful</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Germany</td>
+                <td>old fashion and colourful architecture	</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Australia</td>
+                <td>Natural wonders</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Switzerland</td>
+                <td>mountains, clocks and its food	</td>
+                <td>7</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Code display</h2>
+        <blockquote>Dump all custom fields</blockquote>
+        <a href="https://stackoverflow.com/questions/66293239/wordpress-how-to-retrieve-custom-field-data-from-the-page">https://stackoverflow.com/questions/66293239/wordpress-how-to-retrieve-custom-field-data-from-the-page</a>
+        <pre>
+    $getPostCustom = get_post_custom(); 
+    foreach($getPostCustom as $name=>$value) {
+        echo "<strong>" . $name . "</strong>"."  =>  ";
+        foreach ($value as $nameAr=>$valueAr) {
+                echo "<br />";
+                echo $nameAr."  =>  ";
+                echo var_dump($valueAr);
+        }
+        echo "<br /><br />";
+    }
+        </pre>
+        <a href="https://css-tricks.com/snippets/wordpress/dump-all-custom-fields/">Go to css tricks snippet</a><br>
         <a href="aboutme.html">Go to aboutme</a>
+
 </html>
